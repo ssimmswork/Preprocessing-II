@@ -1,18 +1,30 @@
 // Navigation Styles here
+
+
 header{
     .customPostion(10px,14px);
-    .flexAlign(space-between,center);
-    h1{
-       
-    }
-    nav{
+     .flexAlign(space-between,center);
+     @media @mobile{
+        flex-direction: column;
+        font-size: 16px;
+     }
+     h1{
+         @media @mobile{
+             margin: 10px;
+         }
+     }
+        nav{
         width: 40%;
         font-size: 1.6rem;
         .flexAlign(space-between,center);
+        @media @mobile{
+            width:100%;
+        }        
     a{
         &:hover{
             background: blue;
         } 
     }
    }
-}
+ 
+   }
