@@ -1,1 +1,15 @@
 // Mixins in here
+.flexAlign(@justify,@align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.customPostion(@margin:0,@padding:0){
+    margin:@margin;
+    padding:@padding;
+}
+
+.borderTop(){
+    border-top:3px dashed lightgray;
+  }
